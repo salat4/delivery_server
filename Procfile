@@ -1,1 +1,1 @@
-web: node delivery_server
+web:node delivery_server
