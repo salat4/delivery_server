@@ -1,7 +1,7 @@
 const express = require("express")
 const mongo = require("mongodb").MongoClient
 const cors = require('cors');
-
+require('dotenv').config()
 const app = express()
 const url = "mongodb://localhost:27017"
 
@@ -68,3 +68,8 @@ app.post('/order', (req, res) => {
     })    
 })
 app.listen(8080, () => console.log("Server ready"))
+
+
+
+const port = process.env.PORT || 3000;
+app.listen(port);
